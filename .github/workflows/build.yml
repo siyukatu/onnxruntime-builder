@@ -300,7 +300,7 @@ jobs:
           repository: microsoft/onnxruntime
           submodules: recursive
           ref: v${{ env.ONNXRUNTIME_VERSION }}
-          token: ${{ secrets.PRODUCTION_GITHUB_TOKEN }}
+          token: ${{ github.token }}
 
       - name: Switch to production
         id: switch-to-production
