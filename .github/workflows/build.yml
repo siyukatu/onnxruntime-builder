@@ -695,7 +695,7 @@ jobs:
           repository: microsoft/onnxruntime
           submodules: true
           ref: v${{ env.ONNXRUNTIME_VERSION }}
-          token: ${{ secrets.PRODUCTION_GITHUB_TOKEN }}
+          token: ${{ github.token }}
 
       - name: Switch to production
         id: switch-to-production
